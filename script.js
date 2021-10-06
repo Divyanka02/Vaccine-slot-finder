@@ -7,9 +7,6 @@ btn.addEventListener('click', (e) => {
     let pincode = document.getElementById('pincode').value
     let date = document.getElementById('date').value
 
-
-
-
     let url = `https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=${pincode}&date=${date}`
     // let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=277001&date=29-05-2021"
 
@@ -38,11 +35,9 @@ btn.addEventListener('click', (e) => {
                                         </div>
                                     </div>
                                 `
-        ))
-        
+        ))   
     })
     .catch(err => console.log(err))
-
 })
 
 // let url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode=277001&date=29-05-2021"
